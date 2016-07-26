@@ -12,76 +12,84 @@
     tools:context="com.tigerspike.chrisnevin.projectzero.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
-
-        <TextView
+        <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="My Nanodegree Apps"
-            android:id="@+id/textView"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="10dp" />
+            android:id="@+id/scrollView"
+            android:layout_centerHorizontal="true">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Popular Movies"
-            android:id="@+id/btnPopularMovies"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:onClick="sendMessage" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout"
+                android:gravity="center">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Stock Hawk"
-            android:id="@+id/btnStockHawk"
-            android:layout_below="@+id/btnCapstone"
-            android:layout_centerHorizontal="true"
-            android:onClick="sendMessage" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="My Nanodegree Apps"
+                    android:id="@+id/textView"
+                    android:layout_marginTop="@dimen/title_top_margin"
+                    android:layout_marginBottom="@dimen/title_bottom_margin" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Build it Bigger"
-            android:id="@+id/btnBuildItBigger"
-            android:layout_below="@+id/btnGoUbiquitous"
-            android:layout_centerHorizontal="true"
-            android:onClick="sendMessage" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Popular Movies"
+                    android:id="@+id/btnPopularMovies"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="sendMessage" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Make Your App Material"
-            android:id="@+id/btnMakeYourAppMaterial"
-            android:layout_below="@+id/btnMakeYourAppMaterial"
-            android:layout_centerHorizontal="true"
-            android:onClick="sendMessage" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stock Hawk"
+                    android:id="@+id/btnStockHawk"
+                    android:layout_below="@+id/btnPopularMovies"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="sendMessage" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Go Ubiquitous"
-            android:id="@+id/btnGoUbiquitous"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:onClick="sendMessage" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Build it Bigger"
+                    android:id="@+id/btnBuildItBigger"
+                    android:layout_below="@+id/btnStockHawk"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="sendMessage" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Capstone"
-            android:id="@+id/btnCapstone"
-            android:layout_below="@+id/button5"
-            android:layout_centerHorizontal="true"
-            android:onClick="sendMessage" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Make Your App Material"
+                    android:id="@+id/btnMakeYourAppMaterial"
+                    android:layout_below="@+id/btnBuildItBigger"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="sendMessage" />
 
-    </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Go Ubiquitous"
+                    android:id="@+id/btnGoUbiquitous"
+                    android:layout_below="@+id/btnMakeYourAppMaterial"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="sendMessage" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Capstone"
+                    android:id="@+id/btnCapstone"
+                    android:layout_below="@+id/btnGoUbiquitous"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="sendMessage" />
+
+            </LinearLayout>
+        </ScrollView>
 
 </RelativeLayout>
